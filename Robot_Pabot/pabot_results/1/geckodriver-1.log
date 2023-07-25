@@ -1,0 +1,14 @@
+1687783231453	geckodriver	INFO	Listening on 127.0.0.1:60235
+1687783234513	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60236" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\verus\\AppData\\Local\\Temp\\rust_mozprofileUvXYdw"
+1687783234873	Marionette	INFO	Marionette enabled
+1687783234877	Marionette	INFO	Listening on port 60288
+WebDriver BiDi listening on ws://localhost:60236
+Read port: 60288
+1687783235058	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\verus\\AppData\\Local\\Temp\\rust_mozprofileUvXYdw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60236/devtools/browser/8a7e7b71-503b-4740-991a-798793f74474
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://the-internet.herokuapp.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://the-internet.herokuapp.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1687783238900	Marionette	INFO	Stopped listening on port 60288
+[Parent 30024, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:723

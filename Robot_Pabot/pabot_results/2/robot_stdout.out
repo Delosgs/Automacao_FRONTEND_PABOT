@@ -1,0 +1,29 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Login.Opera                                                            
+==============================================================================
+Cenário: Login com sucesso                                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Robot_Pabot\login.opera.robot:7
+    T:  Cenário: Login com sucesso    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Robot_Pabot\login.opera.robot:8
+      Dado que estou na tela de login no Opera    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Robot_Pabot\steps_login.robot:10
+      Open Browser    ${url}    ${browser}
+      |  ${url} = https://the-internet.herokuapp.com/login (str)
+      |  ${browser} = Opera (str)
+______________________________________________________________________________
+| FAIL |
+AttributeError: module 'selenium.webdriver' has no attribute 'Opera'
+------------------------------------------------------------------------------
+Suites.Login.Opera                                                    | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Robot_Pabot\pabot_results\2\output.xml

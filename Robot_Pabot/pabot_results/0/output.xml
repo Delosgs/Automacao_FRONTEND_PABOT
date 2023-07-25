@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20230626 09:40:31.199" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Login Chrome" source="C:\Robot_Pabot\login_chrome.robot">
+<test id="s1-s1-t1" name="Cenário: Login com sucesso" line="7">
+<kw name="Dado que estou na tela de login no Chrome" library="steps_login" sourcename="Dado que estou na tela de login no ${browser}">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230626 09:40:31.431" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<status status="PASS" starttime="20230626 09:40:31.430" endtime="20230626 09:40:34.395"/>
+</kw>
+<status status="PASS" starttime="20230626 09:40:31.430" endtime="20230626 09:40:34.397"/>
+</kw>
+<kw name="Quando realizo o login" library="steps_login">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 09:40:34.401" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<status status="PASS" starttime="20230626 09:40:34.398" endtime="20230626 09:40:34.518"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 09:40:34.519" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230626 09:40:34.518" endtime="20230626 09:40:34.609"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230626 09:40:34.611" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20230626 09:40:34.611" endtime="20230626 09:40:34.980"/>
+</kw>
+<status status="PASS" starttime="20230626 09:40:34.397" endtime="20230626 09:40:34.980"/>
+</kw>
+<kw name="Então devo visualizar a mensagem &quot;You logged into a secure area!&quot;" library="steps_login" sourcename="Então devo visualizar a mensagem &quot;${mensagem}&quot;">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>id=flash</arg>
+<arg>You logged into a secure area!\n×</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230626 09:40:34.982" level="INFO">Verifying element 'id=flash' contains exact text 'You logged into a secure area!
+×'.</msg>
+<status status="PASS" starttime="20230626 09:40:34.981" endtime="20230626 09:40:35.018"/>
+</kw>
+<status status="PASS" starttime="20230626 09:40:34.981" endtime="20230626 09:40:35.018"/>
+</kw>
+<status status="PASS" starttime="20230626 09:40:31.429" endtime="20230626 09:40:35.018"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230626 09:40:35.019" endtime="20230626 09:40:37.119"/>
+</kw>
+<status status="PASS" starttime="20230626 09:40:31.229" endtime="20230626 09:40:37.119"/>
+</suite>
+<status status="PASS" starttime="20230626 09:40:31.209" endtime="20230626 09:40:37.121"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Login Chrome">Suites.Login Chrome</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,13 @@
+1690322742600	geckodriver	INFO	Listening on 127.0.0.1:63546
+1690322745712	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63547" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\verus\\AppData\\Local\\Temp\\rust_mozprofilecCAwWk"
+1690322746286	Marionette	INFO	Marionette enabled
+1690322746291	Marionette	INFO	Listening on port 63561
+WebDriver BiDi listening on ws://localhost:63547
+Read port: 63561
+1690322746448	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\verus\\AppData\\Local\\Temp\\rust_mozprofilecCAwWk\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63547/devtools/browser/f67f9055-180e-4139-a5d3-d851b2b50690
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://the-internet.herokuapp.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://the-internet.herokuapp.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1690322751503	Marionette	INFO	Stopped listening on port 63561

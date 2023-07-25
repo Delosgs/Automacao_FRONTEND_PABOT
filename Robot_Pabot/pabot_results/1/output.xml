@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20230626 09:40:31.196" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Login Firefox" source="C:\Robot_Pabot\login_firefox.robot">
+<test id="s1-s1-t1" name="Cenário: Login com sucesso" line="7">
+<kw name="Dado que estou na tela de login no Firefox" library="steps_login" sourcename="Dado que estou na tela de login no ${browser}">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230626 09:40:31.416" level="INFO">Opening browser 'Firefox' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<msg timestamp="20230626 09:40:31.416" level="INFO">Firefox driver log is always forced to to: C:\Robot_Pabot\pabot_results\1\geckodriver-1.log</msg>
+<status status="PASS" starttime="20230626 09:40:31.415" endtime="20230626 09:40:38.444"/>
+</kw>
+<status status="PASS" starttime="20230626 09:40:31.415" endtime="20230626 09:40:38.444"/>
+</kw>
+<kw name="Quando realizo o login" library="steps_login">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 09:40:38.446" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<status status="PASS" starttime="20230626 09:40:38.445" endtime="20230626 09:40:38.489"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230626 09:40:38.489" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230626 09:40:38.489" endtime="20230626 09:40:38.505"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230626 09:40:38.506" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20230626 09:40:38.506" endtime="20230626 09:40:38.876"/>
+</kw>
+<status status="PASS" starttime="20230626 09:40:38.444" endtime="20230626 09:40:38.877"/>
+</kw>
+<kw name="Então devo visualizar a mensagem &quot;You logged into a secure area!&quot;" library="steps_login" sourcename="Então devo visualizar a mensagem &quot;${mensagem}&quot;">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>id=flash</arg>
+<arg>You logged into a secure area!\n×</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230626 09:40:38.877" level="INFO">Verifying element 'id=flash' contains exact text 'You logged into a secure area!
+×'.</msg>
+<status status="PASS" starttime="20230626 09:40:38.877" endtime="20230626 09:40:38.897"/>
+</kw>
+<status status="PASS" starttime="20230626 09:40:38.877" endtime="20230626 09:40:38.897"/>
+</kw>
+<status status="PASS" starttime="20230626 09:40:31.414" endtime="20230626 09:40:38.897"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230626 09:40:38.898" endtime="20230626 09:40:39.573"/>
+</kw>
+<status status="PASS" starttime="20230626 09:40:31.223" endtime="20230626 09:40:39.574"/>
+</suite>
+<status status="PASS" starttime="20230626 09:40:31.204" endtime="20230626 09:40:39.576"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Login Firefox">Suites.Login Firefox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
